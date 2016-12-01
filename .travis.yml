@@ -9,4 +9,4 @@ before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 after_success:
-  - npm run coveralls &  codeclimate-test-reporter < lcov.info
+  - npm run coveralls
