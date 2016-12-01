@@ -27,5 +27,8 @@
     "mocha": "^3.2.0",
     "mocha-loader": "^1.0.0",
     "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.15"
   }
 }
