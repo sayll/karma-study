@@ -4,8 +4,7 @@
   "description": "Karma Mocha",
   "main": "lib/index.js",
   "scripts": {
-    "test": "karma start karma.conf",
-    "coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "test": "make test-coveralls"
   },
   "repository": "https://github.com/sayll/Karma.git",
   "author": "KEN <kilol@qq.com>",
