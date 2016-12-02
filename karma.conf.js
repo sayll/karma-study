@@ -1,25 +1,24 @@
 module.exports = function (config) {
 	config.set({
-		basePath     : '',
-		frameworks   : ['mocha'],
-		files        : ['test/*.js'],
-		exclude      : [],
-		preprocessors: {
+		basePath         : '',
+		frameworks       : ['mocha'],
+		files            : ['test/*.js'],
+		exclude          : [],
+		preprocessors    : {
 			'test/*.js': ['webpack']
 		},
-		reporters    : [ 'progress','coverage'],
-		port         : 9876,
-		colors       : true,
-		logLevel     : config.LOG_INFO,
-		autoWatch    : false,
-		// start these browsers
-		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-		browsers     : ['PhantomJS'],
-		captureTimeout: 60000,
+		reporters        : ['progress', 'coverage'],
+		port             : 9876,
+		colors           : true,
+		logLevel         : config.LOG_INFO,
+		autoWatch        : false,
+		singleRun        : true,
+		browsers         : ['PhantomJS'],
+		captureTimeout   : 60000,
 		webpack          : {
 			module: {
 				loaders: [{
-					test   : /\.js$/,
+					test   : /\.(js|jsx)$/,
 					exclude: /node_modules/,
 					loader : 'babel-loader',
 					query  : {
@@ -44,7 +43,6 @@ module.exports = function (config) {
 			}, {
 				type: 'text-summary'
 			}]
-		},
-		singleRun        : true
+		}
 	})
 }
