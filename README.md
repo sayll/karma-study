@@ -1,5 +1,5 @@
-# Karma - Mocha
-[![Coverage Status](https://travis-ci.org/sayll/Karma-Mocha.svg?branch=master)](https://travis-ci.org/sayll/Karma-Mocha)  [![Coverage Status](https://coveralls.io/repos/github/sayll/Karma-Mocha/badge.svg?branch=master)](https://coveralls.io/github/sayll/Karma-Mocha?branch=master)
+# Sayll_Karma
+[![Coverage Status](https://travis-ci.org/sayll/Sayll_Karma.svg?branch=master)](https://travis-ci.org/sayll/Karma-Mocha)  [![Coverage Status](https://coveralls.io/repos/github/sayll/Sayll_Karma/badge.svg?branch=master)](https://coveralls.io/github/sayll/Karma-Mocha?branch=master)
 
 ## 说明
 * Karma-mocha是一个前端单元测试脚手架
@@ -58,7 +58,7 @@
  * 点击自己的头像进行个人资料界面，在下面你的项目中，点击你所需要自动构建的项目前的按钮，这个按钮就会变成绿色的勾
  * 在点击到自己的用户信息界面之后，在你的Repo上面会有一个简单的使用介绍，开启Travis-CI是很简单的。
  * 状态图标，在点击左侧`My Repositories`，选中相关项目。在项目标题右边，点击状态图标会出现图标URL；可以添加到md文件显示测试结果;
- `[![Coverage Status](https://travis-ci.org/sayll/Karma-Mocha.svg?branch=master)](https://travis-ci.org/sayll/Karma-Mocha)`  [![Coverage Status](https://travis-ci.org/sayll/Karma-Mocha.svg?branch=master)](https://travis-ci.org/sayll/Karma-Mocha)
+ `[![Coverage Status](https://travis-ci.org/sayll/Sayll_Karma.svg?branch=master)](https://travis-ci.org/sayll/Sayll_Karma)`  [![Coverage Status](https://travis-ci.org/sayll/Sayll_Karma.svg?branch=master)](https://travis-ci.org/sayll/Sayll_Karma)
  * 在你的项目根目录新建.travis.yml文件，参考仓库中的代码片段
    * language: 你项目所用的语言
    * node_js: 这个底下是自动构建所使用的环境。（注意：有固定的格式）
@@ -72,7 +72,7 @@
  * 左侧，`ADD REPOS`;由OFF指向ON；
  * 如果没有你要的项目可点击右下角`REFRESH PRIVATE REPOS`
  * 如果你的项目不是`Travis Pro`就可以直接点击项目，找到`BADGE`，把自己需要的图标地址复制到md文件中，or其它地址;
- `[![Coverage Status](https://coveralls.io/repos/github/sayll/Karma-Mocha/badge.svg?branch=master)](https://coveralls.io/github/sayll/Karma-Mocha?branch=master)`  [![Coverage Status](https://coveralls.io/repos/github/sayll/Karma-Mocha/badge.svg?branch=master)](https://coveralls.io/github/sayll/Karma-Mocha?branch=master)
+ `[![Coverage Status](https://coveralls.io/repos/github/sayll/Sayll_Karma/badge.svg?branch=master)](https://coveralls.io/github/sayll/Sayll_Karma?branch=master)`  [![Coverage Status](https://coveralls.io/repos/github/sayll/Sayll_Karma/badge.svg?branch=master)](https://coveralls.io/github/sayll/Sayll_Karma?branch=master)
  * 如果是`Travis Pro`，你就按照官网说明添加`.coveralls.yml`文件;填写相关token;
 
 ### 使用说明
