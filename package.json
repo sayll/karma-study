@@ -1,5 +1,5 @@
 {
-  "name": "Karma111_",
+  "name": "Sayll_Karma",
   "version": "1.0.0",
   "description": "Karma Mocha",
   "main": "lib/index.js",
@@ -7,7 +7,7 @@
     "test": "karma start",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
-  "repository": "https://github.com/sayll/Karma.git",
+  "repository": "https://github.com/sayll/Sayll_Karma.git",
   "author": "KEN <kilol@qq.com>",
   "license": "MIT",
   "dependencies": {
@@ -25,6 +25,7 @@
     "karma-webpack": "^1.8.0",
     "mocha": "^3.2.0",
     "mocha-loader": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.13",
     "webpack": "^1.13.3"
   },
   "devDependencies": {
