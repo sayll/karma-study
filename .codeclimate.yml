@@ -1,17 +1,7 @@
-engines:
-  eslint:
-    enabled: true
-  csslint:
-      enabled: true
-
-ratings:
-     paths:
-     - "**.js"
-     - "**.jsx"
-     - "**.pcss"
-     - "**.sass"
-     - "**.scss"
-     - "**.less"
-
+languages:
+  Ruby: true
+  JavaScript: true
+  PHP: true
+  Python: true
 exclude_paths:
-  - "spec/**/*"
+- ""
