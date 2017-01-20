@@ -4,31 +4,45 @@
   "description": "Karma Mocha",
   "main": "lib/index.js",
   "scripts": {
-    "test": "karma start",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "better-npm-run test",
+    "test:dev": "better-npm-run test:dev",
+    "test:coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "betterScripts": {
+    "test": {
+      "command": "node ./node_modules/karma/bin/karma start config/karma.conf",
+      "env": {
+        "NODE_ENV": "production",
+        "NODE_TEST": "production"
+      }
+    },
+    "test:dev": {
+      "command": "node ./node_modules/karma/bin/karma start config/karma.conf",
+      "env": {
+        "NODE_ENV": "production",
+        "NODE_TEST": "development"
+      }
+    }
   },
   "repository": "https://github.com/sayll/Sayll_Karma.git",
   "author": "KEN <kilol@qq.com>",
   "license": "MIT",
-  "dependencies": {
-    "babel": "^6.5.2",
-    "babel-core": "^6.18.2",
-    "babel-loader": "^6.2.8",
-    "babel-plugin-istanbul": "^3.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.22.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-istanbul": "^3.1.2",
     "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "better-npm-run": "0.0.13",
     "chai": "^3.5.0",
-    "karma": "^1.3.0",
-    "karma-cli": "^1.0.1",
+    "karma": "^1.4.0",
     "karma-coverage": "^1.1.1",
     "karma-mocha": "^1.3.0",
     "karma-phantomjs-launcher": "^1.0.2",
-    "karma-webpack": "^1.8.0",
+    "karma-webpack": "^2.0.1",
     "mocha": "^3.2.0",
-    "mocha-loader": "^1.0.0",
-    "phantomjs-prebuilt": "^2.1.13",
-    "webpack": "^1.13.3"
-  },
-  "devDependencies": {
-    "coveralls": "^2.11.15"
+    "phantomjs-prebuilt": "^2.1.14",
+    "webpack": "^2.2.0"
   }
 }
