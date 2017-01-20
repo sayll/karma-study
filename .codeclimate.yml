@@ -7,7 +7,6 @@ engines:
   	enabled: true
     config:
     	languages:
-      - node
       - javascript
 ratings:
   paths:
