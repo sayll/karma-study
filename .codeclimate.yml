@@ -1,10 +1,17 @@
 engines:
   eslint:
     enabled: true
+  csslint:
+      enabled: true
 
 ratings:
-   paths:
-   - "**.js"
+     paths:
+     - "**.js"
+     - "**.jsx"
+     - "**.pcss"
+     - "**.sass"
+     - "**.scss"
+     - "**.less"
 
 exclude_paths:
-- "spec/**/*"
+  - "spec/**/*"
