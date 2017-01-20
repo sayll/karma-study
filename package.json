@@ -27,8 +27,7 @@
   "repository": "https://github.com/sayll/Sayll_Karma.git",
   "author": "KEN <kilol@qq.com>",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.22.0",
     "babel-loader": "^6.2.10",
