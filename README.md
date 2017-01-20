@@ -10,6 +10,23 @@
 
 * 觉得不错的话，请Star一下本项目，这是对作者最大的支持。
 
+## 开始
+```bash
+$ git clone https://github.com/sayll/Sayll_Karma.git
+$ cd Sayll_Karma
+$ npm install                   # Install project dependencies
+$ npm run test                  # Compile and launch
+```
+开发过程中，你用得最多的会是`npm run test`，但是这里还有很多其它的处理：
+
+|`npm run <script>`|解释|
+|------------------|-----------|
+|`test`|单次跑测试,自动关闭浏览器和监听|
+|`test:dev`|持续开发测试，保持监听|
+|`test:coveralls`|一般情况下不会使用，给第三方平台调用生成覆盖率测试报告|
+* 开发推荐推荐使用 `npm run test:dev`
+* 打包前推荐使用`npm run test`
+
 ## 工具介绍
 
 ### Runner
@@ -53,7 +70,7 @@
 ## karma.conf.js配置
 代码中有相关备注，为了减少篇幅，这里不做过多解释。如果有兴趣的同志，可以自行翻阅源码。
 
-## 接通[Travis-ci](https://travis-ci.org)与[Coveralls](https://coveralls.io)
+## 【可选】接通[Travis-ci](https://travis-ci.org)与[Coveralls](https://coveralls.io)
 
 ### [Travis-ci](https://travis-ci.org)
  * [Travis-ci](https://travis-ci.org)官网登录，绑定github账号。
@@ -76,24 +93,6 @@
  * 如果你的项目不是`Travis Pro`就可以直接点击项目，找到`BADGE`，把自己需要的图标地址复制到md文件中，or其它地址;
  `[![Coverage Status](https://coveralls.io/repos/github/sayll/Sayll_Karma/badge.svg?branch=master)](https://coveralls.io/github/sayll/Sayll_Karma?branch=master)`  [![Coverage Status](https://coveralls.io/repos/github/sayll/Sayll_Karma/badge.svg?branch=master)](https://coveralls.io/github/sayll/Sayll_Karma?branch=master)
  * 如果是`Travis Pro`，你就按照官网说明添加`.coveralls.yml`文件;填写相关token;
-
-### 开始
-```bash
-$ git clone https://github.com/sayll/Sayll_Karma.git
-$ cd Sayll_Karma
-$ npm install                   # Install project dependencies
-$ npm run test                  # Compile and launch
-```
-开发过程中，你用得最多的会是`npm run test`，但是这里还有很多其它的处理：
-
-|`npm run <script>`|解释|
-|------------------|-----------|
-|`test`|单次跑测试,自动关闭浏览器和监听|
-|`test:dev`|持续开发测试，保持监听|
-|`test:coveralls`|一般情况下不会使用，给第三方平台调用生成覆盖率测试报告|
-* 开发推荐推荐使用 `npm run test:dev`
-* 打包前推荐使用`npm run test`
-
 
 ### 参考文章
 * [【持续集成你的项目】为你的项目创建自动化测试和代码覆盖率测试](https://segmentfault.com/a/1190000005090444#articleHeader8)
