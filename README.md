@@ -1,11 +1,14 @@
 # Sayll_Karma
-[![Coverage Status](https://travis-ci.org/sayll/Sayll_Karma.svg?branch=master)](https://travis-ci.org/sayll/Karma-Mocha)  [![Coverage Status](https://coveralls.io/repos/github/sayll/Sayll_Karma/badge.svg?branch=master)](https://coveralls.io/github/sayll/Karma-Mocha?branch=master)
+[![Coverage Status](https://travis-ci.org/sayll/Sayll_Karma.svg?branch=master)](https://travis-ci.org/sayll/Sayll_Karma)  [![Coverage Status](https://coveralls.io/repos/github/sayll/Sayll_Karma/badge.svg?branch=master)](https://coveralls.io/github/sayll/Sayll_Karma?branch=master)
 
 ## 说明
-* Karma-mocha是一个前端单元测试脚手架
-* 它可以选择浏览器测试环境，完成自动化前端单元测试。
-* 它可以与[Travis-ci](https://travis-ci.org)和[Coveralls](https://coveralls.io)完成对接
-* 迫不及待了吗？那么让我们进入正题吧！
+  Sayll_Karma是一个前端集成测试脚手架案例
+
+  它可以选择浏览器测试环境，完成自动化前端测试。
+
+  它可以与[Travis-ci](https://travis-ci.org)和[Coveralls](https://coveralls.io)完成对接
+
+* 觉得不错的话，请Star一下本项目，这是对作者最大的支持。
 
 ## 工具介绍
 
@@ -26,7 +29,7 @@
   * 断言库也有很多的选择，其中比较有名气的有：
     * expect
     * should
-    * chai
+    * chai (大而全，涵盖TDD和BDD测试模式)
   * 此处使用chai，具体使用可参考[阮前辈的文章](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html) 
   
 ## 插件使用
@@ -34,7 +37,6 @@
  * karma：框架本体
  * mocha：测试框架
  * chai：断言库
- * karma-cli：全局安装（可直接通过karma start进行测试）
  * karma-mocha：Mocha测试框架
  * karma-coverage：覆盖率测试
  * karma-phantomjs-launcher：PhantomJS环境
@@ -44,9 +46,9 @@
  * karma-firefox-launcher：Firefox环境
  * babel-plugin-istanbul：处理测试覆盖率可靠性（因为webpack打包，使之不可靠）
  * karma-webpack：可以让测试支持ES6
- * babel，babel-core，babel-loader，babel-preset-es2015：ES6所需要的包支持
+ * babel-core，babel-loader，babel-preset-es2015：ES6所需要的包支持
+ * better-npm-run: 配置本地环境变量
  * webpack
- * mocha-loader：预处理
   
 ## karma.conf.js配置
 代码中有相关备注，为了减少篇幅，这里不做过多解释。如果有兴趣的同志，可以自行翻阅源码。
@@ -75,14 +77,23 @@
  `[![Coverage Status](https://coveralls.io/repos/github/sayll/Sayll_Karma/badge.svg?branch=master)](https://coveralls.io/github/sayll/Sayll_Karma?branch=master)`  [![Coverage Status](https://coveralls.io/repos/github/sayll/Sayll_Karma/badge.svg?branch=master)](https://coveralls.io/github/sayll/Sayll_Karma?branch=master)
  * 如果是`Travis Pro`，你就按照官网说明添加`.coveralls.yml`文件;填写相关token;
 
-### 使用说明
-* 下载本脚手架
-* 下载相关运行包
-  * 正常运行npm install 
-  * 如果使用阿里镜像的cnpm: cnpm install 
-  * 如果使用yarn：yarn install
-* 运行测试：karma start(注：如果无法运行，请全局安装karma-cli：`npm install karma-cli -g`)
-* 之后你push文件的时候就会自动通过`Travis-ci`服务运行 `karma start`;然后运行Coveralls;最后导出结果。改变md中的测试图标;
+### 开始
+```bash
+$ git clone https://github.com/sayll/Sayll_Karma.git
+$ cd Sayll_Karma
+$ npm install                   # Install project dependencies
+$ npm run test                  # Compile and launch
+```
+开发过程中，你用得最多的会是`npm run test`，但是这里还有很多其它的处理：
+
+|`npm run <script>`|解释|
+|------------------|-----------|
+|`test`|单次跑测试,自动关闭浏览器和监听|
+|`test:dev`|持续开发测试，保持监听|
+|`test:coveralls`|一般情况下不会使用，给第三方平台调用生成覆盖率测试报告|
+* 开发推荐推荐使用 `npm run test:dev`
+* 打包前推荐使用`npm run test`
+
 
 ### 参考文章
 * [【持续集成你的项目】为你的项目创建自动化测试和代码覆盖率测试](https://segmentfault.com/a/1190000005090444#articleHeader8)
@@ -90,5 +101,3 @@
 * [一个靠谱的前端开源项目需要什么？](https://segmentfault.com/a/1190000005859766#articleHeader12)
 * [现代JS代码测试流程](https://segmentfault.com/a/1190000003869696)
 * [聊一聊前端自动化测试 #37](https://github.com/tmallfe/tmallfe.github.io/issues/37)
-
-### 喜欢的请点一下右上角的 `STAR`
