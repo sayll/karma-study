@@ -1,7 +1,7 @@
 languages:
-  Ruby: true
+  Ruby: false
   JavaScript: true
-  PHP: true
-  Python: true
+  PHP: false
+  Python: false
 exclude_paths:
 - ""

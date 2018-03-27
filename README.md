@@ -8,8 +8,6 @@
 
   它可以与[Travis-ci](https://travis-ci.org)和[Coveralls](https://coveralls.io)完成对接
 
-* 觉得不错的话，请Star一下本项目，这是对作者最大的支持。
-
 ## 开始
 ```bash
 $ git clone https://github.com/sayll/Sayll_Karma.git
@@ -33,7 +31,7 @@ $ npm run test                  # Compile and launch
   * 这里我们使用的Runner工具就是Google Angular 团队推出的 **karma**;
   * **Karma**是一个测试集成框架，可以方便地以插件的形式集成测试框架、测试环境、覆盖率，[以及其他非常多的定制](https://karma-runner.github.io/1.0/config/configuration-file.html);
     
-###测试框架
+### 测试框架
   * 测试框架有很多:
     * [mocha](http://mochajs.org/)：它的作者就是在Github上粉丝6K的超级Jser TJ Holowaychuk，可以在他的页面上看到过去一年的提交量是5700多，拥有300多个项目，无论是谁都难以想象他是如何进行coding的。
     * [Jasmine](https://jasmine.github.io/)：有一类框架叫做xUnit，来源于著名的JAVA测试框架JUnit，xUnit则代表了一种模式，并且使用这样的命名。在Javascript中也有这样的一个老牌框架JsUnit，他的作者是Edward Hieatt来自Pivotal Labs，但在几年前JsUnit就已经停止维护了，他们带来了新的BDD框架Jasmine。
@@ -42,7 +40,7 @@ $ npm run test                  # Compile and launch
     * [Sinon](http://sinonjs.org/)：Sinon并不是一个典型的单元测试框架，更像一个库，最主要的是对Function的测试，包括 Spy 和 Stub 两个部分，Spy用于侦测Function，而Stub更像是一个Spy的插件或者助手，在Function调用前后做一些特殊的处理，比如修改配置或者回调。它正好极大的弥补了Qunit的不足，所以通常会使用Qunit+Sinon来进行单元测试。
   * 这里，我们使用**mocha**，其他测试框架暂不做任何评论;
   
-###断言库
+### 断言库
   * 断言库也有很多的选择，其中比较有名气的有：
     * expect
     * should
@@ -86,7 +84,7 @@ $ npm run test                  # Compile and launch
    * script：开始测试所用的命令（默认为npm test）
    * after_script: 在测试结束之后运行的命令，比如用于导出结果到COVERALLS
 
-###[Coveralls](https://coveralls.io)
+### [Coveralls](https://coveralls.io)
 * [Coveralls](https://coveralls.io)官网登录。
  * 左侧，`ADD REPOS`;由OFF指向ON；
  * 如果没有你要的项目可点击右下角`REFRESH PRIVATE REPOS`
